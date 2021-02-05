@@ -1,0 +1,38 @@
+* {
+  font-family: verdana;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+#lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  border: rgb(253, 151, 166) 1px solid;
+  padding: 1.3em;
+}
+
+button {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  padding-left: 8em;
+  padding-right: 8em;
+  border-radius: 0%;
+  border: lightgray 1px solid;
+}
+
+.bkg-color {
+  background: rgb(247, 74, 74);
+}
+
+.names {
+  border: none;
+  background-color: white;
+}

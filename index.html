@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="acme.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acme First, Second, Third</title>
 </head>
 <body>
-    
+    <div id="title">
+    <h1>Acme First, Second, Third</h1>
+    </div>
+
+    <div id="lists">
+        <div class='list' id="first">
+
+            <button class=""><</button>
+            <button class="bkg-color" id="forward-l-1">></button>
+
+            <h2>FIRST</h2>
+
+            <button class='names'>moe</button>
+
+        </div>
+        <div class='list' id="second">
+
+            <button class="bkg-color" id="back-l-2"><</button>
+            <button class="bkg-color" id="forward-l-2">></button>
+
+            <h2>SECOND</h2>
+
+            <button class='names'>larry</button>
+
+        </div>
+        <div class='list' id="third">
+
+            <button class="bkg-color" id="back-l-3"><</button>
+            <button class="">></button>
+
+            <h2>THIRD</h2>
+
+            <button class='names'>moe</button>    
+            <button class='names'>curly</button>
+            <button class='names'>lucy</button>
+
+        </div>
+    </div>
 </body>
 </html>
