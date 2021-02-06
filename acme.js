@@ -7,9 +7,15 @@ const users = [
   { id: 4, name: 'lucy', slot: 'third', selected: true },
 ];
 
-const names = [...document.getElementsByClassName('names')];
+//List Names
 
-console.log(names);
+const nameList = document.querySelectorAll('.names');
+
+const highlightName = [...nameList].forEach((name) => {
+  name.addEventListener('click', function () {
+    name.classList.toggle('bkg-color');
+  });
+});
 
 //Button Direction Event Listeners
 
@@ -18,22 +24,22 @@ const buttonL2Back = document.getElementById('back-l-2');
 const buttonL2Forward = document.getElementById('forward-l-2');
 const buttonL3Back = document.getElementById('back-l-3');
 
-buttonL1Forward.addEventListener('click', function (ev) {
+buttonL1Forward.addEventListener('click', function () {
+  console.log('functioning');
+});
+
+buttonL2Back.addEventListener('click', function () {
   console.log('Im working');
 });
 
-buttonL2Back.addEventListener('click', function (ev) {
+buttonL2Forward.addEventListener('click', function () {
   console.log('Im working');
 });
 
-buttonL2Forward.addEventListener('click', function (ev) {
+buttonL3Back.addEventListener('click', function () {
   console.log('Im working');
 });
 
-buttonL3Back.addEventListener('click', function (ev) {
-  console.log('Im working');
+[...document.getElementsByClassName('names')].forEach((name) => {
+  console.log(name.classList.value);
 });
-
-// names.addEventListener('click', function (ev) {
-//   console.log('this was messing it up');
-// });

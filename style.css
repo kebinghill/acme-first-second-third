@@ -28,8 +28,12 @@ button {
   border: lightgray 1px solid;
 }
 
+.names.bkg-color {
+  background-color: rgb(247, 74, 74);
+}
+
 .bkg-color {
-  background: rgb(247, 74, 74);
+  background-color: rgb(247, 74, 74);
 }
 
 .names {
